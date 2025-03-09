@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #ffe6f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        h2 {
+            color: #d63384;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #d63384;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #d63384;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            flex: 1;
+            margin: 0 5px;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #b82e6e;
+        }
+        .register-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        a {
+            color: #d63384;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Login</h2>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="3" maxlength="30">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" maxlength="20">
+        </div>
+        <div class="button-group">
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+        </div>
+        <p class="register-link">Belum punya akun? <a href="registrasi.html">Daftar di sini</a></p>
+    </div>
+</body>
+</html>
